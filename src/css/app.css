@@ -45,6 +45,16 @@ body{
   width: 80%;
 }
 
+
+.modal-ingresa {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+
 .close {
   color: #aaa;
   float: right;
