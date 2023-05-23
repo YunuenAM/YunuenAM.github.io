@@ -73,16 +73,24 @@ function  verificarCuenta(event){
    //Función para redirigir a la página de inicio de sesión
 
    
-
+   function cerrarSesion(){
+      window.localStorage.clear();
+      window.location.href = "index.html";
+   }
 
 //seleccion de elementos del DOM
 
 const btnIniciarSesion= document.getElementById("btn-iniciar-sesion");
 const btnRegistrarse= document.getElementById("btn-registrarse");
+const btnCerrarSesion = document.getElementById("btn-cerrar-sesion");
 
 //Agregar evento a los botones
 
 btnIniciarSesion.addEventListener("click", function(event){
     verificarCuenta(event);
+});
+
+btnCerrarSesion.addEventListener("click", function(event){
+  cerrarSesion()
 });
 btnRegistrarse.addEventListener("click", redirigir);
