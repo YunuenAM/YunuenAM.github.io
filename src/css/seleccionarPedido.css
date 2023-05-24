@@ -1,6 +1,10 @@
 
 
-.seccion {
+/* .seccion {
     min-height: 1000px;
     padding: 2rem;
+} */
+
+.selected {
+    color: yellow !important;
 }
