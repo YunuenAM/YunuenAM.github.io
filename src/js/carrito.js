@@ -1,15 +1,15 @@
-//El siguiente código es para aplicar el comportamiento de seleccionar y deseleccionar al hacer click en el icono star
+//El siguiente código es para que dal dar click en el ícono del carrito, se muestre el carrito de compras
 
-jQuery(document).ready(function($) {
-    jQuery('.bi-star').click(function() {
-        jQuery(this).toggleClass('selected');
-    });
+//Se obtiene el elemento del ícono del carrito
 
-jQuery('.card-title').click(function(event) {
-    event.stopPropagation();
-    jQuery(this).find('.bi-star').removeClass('selected');  
-});
+function redirigirCarrito(){
+   window.location.href = "carrito.html";
+}
 
-});
+const divCarrito = document.getElementById("cart");
+const iconoCarrito = document.getElementById(".bi-cart");
 
+//Se agrega el evento click al ícono del carrito
 
+divCarrito.addEventListener("click", redirigirCarrito);
+iconoCarrito.addEventListener("click", redirigirCarrito);
