@@ -72,3 +72,11 @@ body{
 .selected {
     color: blueviolet !important;
 }
+
+
+.carousel-item img {
+  width:47.1875rem;
+ height: 40rem;
+  
+   /* Ajusta la altura según tus necesidades */
+}
