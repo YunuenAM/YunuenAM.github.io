@@ -20,12 +20,18 @@ function cargarEventListeners() {
      // Al Vaciar el carrito
      vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 
+     //Recuperar carrito en local storage al cargar la página
+
+     document.addEventListener('DOMContentLoaded', () => {
+        if(localStorage.getItem('carrito')){
+            articulosCarrito = JSON.parse(localStorage.getItem('carrito'));
+            carritoHTML();
+        }
+    });
+
 }
 
 
-
-
-// Funciones
 // Función que añade el pan al carrito
 function agregarPan(e) {
      e.preventDefault();
@@ -62,6 +68,8 @@ function leerDatosPan(pan) {
           articulosCarrito = [...articulosCarrito, infoPan];
      }
 
+     //Guardar carrito en local storage
+     localStorage.setItem('carrito', JSON.stringify(articulosCarrito));
      // console.log(articulosCarrito)
 
      
@@ -106,14 +114,25 @@ function carritoHTML() {
           contenedorCarrito.appendChild(row);
      });
 
+     //Actualiza el carrito en el local storage
+
+     localStorage.setItem('carrito', JSON.stringify(articulosCarrito));
+
 }
 
 // Elimina los panes del carrito en el DOM
 function vaciarCarrito() {
+
+    limpiarHTML(); // Elimina todo el HTML
+
+    localStorage.removeItem ('carrito'); 
+}
      // forma lenta
      // contenedorCarrito.innerHTML = '';
 
+// Elimina los panes del carrito en el DOM
 
+function limpiarHTML() {
      // forma rapida (recomendada)
      while(contenedorCarrito.firstChild) {
           contenedorCarrito.removeChild(contenedorCarrito.firstChild);
