@@ -134,7 +134,7 @@ ul {
     background-image: url(../img/icono3.png);
 }
 
-#lista-cursos .row {
+#lista-panes.row {
     margin-bottom:20px;
 }
 .agregar-carrito {
