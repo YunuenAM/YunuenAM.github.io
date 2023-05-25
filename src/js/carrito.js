@@ -13,3 +13,4 @@ const iconoCarrito = document.getElementById(".bi-cart");
 
 divCarrito.addEventListener("click", redirigirCarrito);
 iconoCarrito.addEventListener("click", redirigirCarrito);
+
