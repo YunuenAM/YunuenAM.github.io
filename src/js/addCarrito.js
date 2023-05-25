@@ -12,10 +12,10 @@ cargarEventListeners();
 
 function cargarEventListeners() {
      // Dispara cuando se presiona "Agregar Carrito"
-     listaPanes.addEventListener('click', agregarCurso);
+     listaPanes.addEventListener('click', agregarPan);
 
-     // Cuando se elimina un curso del carrito
-     carrito.addEventListener('click', eliminarCurso);
+     // Cuando se elimina un pane del carrito
+     carrito.addEventListener('click', eliminarPan);
 
      // Al Vaciar el carrito
      vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
@@ -26,40 +26,40 @@ function cargarEventListeners() {
 
 
 // Funciones
-// Función que añade el curso al carrito
-function agregarCurso(e) {
+// Función que añade el pan al carrito
+function agregarPan(e) {
      e.preventDefault();
      // Delegation para agregar-carrito
      if(e.target.classList.contains('agregar-carrito')) {
-          const curso = e.target.parentElement.parentElement;
-          // Enviamos el curso seleccionado para tomar sus datos
-          leerDatosCurso(curso);
+          const pan = e.target.parentElement.parentElement;
+          // Enviamos el pan seleccionado para tomar sus datos
+          leerDatosPan(pan);
      }
 }
 
-// Lee los datos del curso
-function leerDatosCurso(curso) {
-     const infoCurso = {
-          imagen: curso.querySelector('img').src,
-          titulo: curso.querySelector('h4').textContent,
-          precio: curso.querySelector('.precio span').textContent,
-          id: curso.querySelector('a').getAttribute('data-id'), 
+// Lee los datos del pan
+function leerDatosPan(pan) {
+     const infoPan = {
+          imagen: pan.querySelector('img').src,
+          titulo: pan.querySelector('h4').textContent,
+          precio: pan.querySelector('.precio span').textContent,
+          id: pan.querySelector('a').getAttribute('data-id'), 
           cantidad: 1
      }
 
 
-     if( articulosCarrito.some( curso => curso.id === infoCurso.id ) ) { 
-          const cursos = articulosCarrito.map( curso => {
-               if( curso.id === infoCurso.id ) {
-                    curso.cantidad++;
-                     return curso;
+     if( articulosCarrito.some( pan => pan.id === infoPan.id ) ) { 
+          const panes = articulosCarrito.map( pan => {
+               if( pan.id === infoPan.id ) {
+                    pan.cantidad++;
+                     return pan;
                 } else {
-                     return curso;
+                     return pan;
              }
           })
-          articulosCarrito = [...cursos];
+          articulosCarrito = [...panes];
      }  else {
-          articulosCarrito = [...articulosCarrito, infoCurso];
+          articulosCarrito = [...articulosCarrito, infoPan];
      }
 
      // console.log(articulosCarrito)
@@ -70,37 +70,37 @@ function leerDatosCurso(curso) {
      carritoHTML();
 }
 
-// Elimina el curso del carrito en el DOM
-function eliminarCurso(e) {
+// Elimina el pan del carrito en el DOM
+function eliminarPan(e) {
      e.preventDefault();
-     if(e.target.classList.contains('borrar-curso') ) {
+     if(e.target.classList.contains('borrar-pan') ) {
           // e.target.parentElement.parentElement.remove();
-          const cursoId = e.target.getAttribute('data-id')
+          const panId = e.target.getAttribute('data-id')
           
           // Eliminar del arreglo del carrito
-          articulosCarrito = articulosCarrito.filter(curso => curso.id !== cursoId);
+          articulosCarrito = articulosCarrito.filter(pan => pan.id !== panId);
 
           carritoHTML();
      }
 }
 
 
-// Muestra el curso seleccionado en el Carrito
+// Muestra el pan seleccionado en el Carrito
 function carritoHTML() {
 
      vaciarCarrito();
 
-     articulosCarrito.forEach(curso => {
+     articulosCarrito.forEach(pan => {
           const row = document.createElement('tr');
           row.innerHTML = `
                <td>  
-                    <img src="${curso.imagen}" width=100>
+                    <img src="${pan.imagen}" width=100>
                </td>
-               <td>${curso.titulo}</td>
-               <td>${curso.precio}</td>
-               <td>${curso.cantidad} </td>
+               <td>${pan.titulo}</td>
+               <td>${pan.precio}</td>
+               <td>${pan.cantidad} </td>
                <td>
-                    <a href="#" class="borrar-curso" data-id="${curso.id}">X</a>
+                    <a href="#" class="borrar-pan" data-id="${pan.id}">X</a>
                </td>
           `;
           contenedorCarrito.appendChild(row);
@@ -108,7 +108,7 @@ function carritoHTML() {
 
 }
 
-// Elimina los cursos del carrito en el DOM
+// Elimina los panes del carrito en el DOM
 function vaciarCarrito() {
      // forma lenta
      // contenedorCarrito.innerHTML = '';
