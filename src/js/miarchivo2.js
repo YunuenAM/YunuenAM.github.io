@@ -1,3 +1,5 @@
+//Filtro de alergenos pendiente
+
 //En miarchivo2.js, se crea un array de objetos con los siguientes datos:
 const productos = [
     {nombre: 'baguette', precio: 35, alergenos: ['gluten']},

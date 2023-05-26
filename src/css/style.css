@@ -425,3 +425,38 @@
   th {
     padding: 0;
   }
+
+  /* Aplicación de media query al carrito*/
+
+/* Estilos generales del carrito de compras */
+#carrito {
+    font-family: 'Roboto', sans-serif; /* Fuente del carrito */
+    /* Estilos generales del carrito de compras */
+  }
+  
+  /* Media query para pantallas de menor tamaño */
+  @media (max-width: 468px) {
+    /* Estilos para la sección y el carrito de compras en pantallas de menor tamaño */
+    .section {
+      padding: 10px;
+      margin-left: 80%; /* Ajusta el padding de la sección */
+    }
+    
+    #carrito {
+        /* Estilos específicos para pantallas de menor tamaño */
+        width: 50%; /* Ajusta el ancho del carrito */
+        font-size: 10px; /* Ajusta el tamaño de fuente del carrito */
+        /* Agrega cualquier otro estilo necesario para hacerlo más pequeño */
+      }
+      
+      #lista-carrito {
+        width: 50%; /* Ajusta el ancho de la tabla */
+        font-size: 12px; /* Ajusta el tamaño de fuente de la tabla */
+      }
+      
+      #vaciar-carrito {
+        font-size: 12px; /* Ajusta el tamaño de fuente del botón */
+      }
+    }
+  
+  
