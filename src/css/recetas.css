@@ -544,7 +544,7 @@ img{
 
 @media screen and (max-width: 1024px){
     .card-image{
-        column-count: 4;
+        column-count: 2;
 
       
     }
@@ -650,6 +650,17 @@ img{
     }
 
 
+}
+
+.entry{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding: 5%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 
