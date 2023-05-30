@@ -19,10 +19,24 @@ const database = [
       content: '¿Sabías que el trigo es uno de los cultivos más importantes y ampliamente cultivados en todo el mundo? Con su rica historia y su papel crucial en la alimentación humana, el trigo ha dejado una huella indeleble en nuestra civilización. En esta entrada de blog, exploraremos algunos aspectos fascinantes del trigo en un panorama breve.El trigo, científicamente conocido como Triticum, pertenece a la familia de las gramíneas y se cultiva en casi todos los continentes. Es considerado un cereal fundamental, y su versatilidad lo ha convertido en un elemento básico en la dieta de muchas culturas. La planta del trigo es alta, con tallos que pueden alcanzar alturas impresionantes y espigas llenas de granos que se cosechan y procesan para obtener diferentes productos.',
       autor: 'Diana',
       imagen: 'img/04-bagel.jpg'
-    }
+    },
+    {
+        title: 'Gluten',
+        content: '¿Sabías que el trigo es uno de los cultivos más importantes y ampliamente cultivados en todo el mundo? Con su rica historia y su papel crucial en la alimentación humana, el trigo ha dejado una huella indeleble en nuestra civilización. En esta entrada de blog, exploraremos algunos aspectos fascinantes del trigo en un panorama breve.El trigo, científicamente conocido como Triticum, pertenece a la familia de las gramíneas y se cultiva en casi todos los continentes. Es considerado un cereal fundamental, y su versatilidad lo ha convertido en un elemento básico en la dieta de muchas culturas. La planta del trigo es alta, con tallos que pueden alcanzar alturas impresionantes y espigas llenas de granos que se cosechan y procesan para obtener diferentes productos.',
+        autor: 'Sara',
+        imagen: 'img/04-bagel.jpg'
+      },
+      {
+        title: 'Bagel',
+        content: '¿Sabías que el trigo es uno de los cultivos más importantes y ampliamente cultivados en todo el mundo? Con su rica historia y su papel crucial en la alimentación humana, el trigo ha dejado una huella indeleble en nuestra civilización. En esta entrada de blog, exploraremos algunos aspectos fascinantes del trigo en un panorama breve.El trigo, científicamente conocido como Triticum, pertenece a la familia de las gramíneas y se cultiva en casi todos los continentes. Es considerado un cereal fundamental, y su versatilidad lo ha convertido en un elemento básico en la dieta de muchas culturas. La planta del trigo es alta, con tallos que pueden alcanzar alturas impresionantes y espigas llenas de granos que se cosechan y procesan para obtener diferentes productos.',
+        autor: 'Julieta',
+        imagen: 'img/04-bagel.jpg'
+      }
   ];
 
   const cardDeck = document.getElementById('cardDeck');
+
+ 
 
 for (let i = 0; i < database.length; i++) {
   const entrada = database[i];
@@ -82,6 +96,8 @@ for (let i = 0; i < database.length; i++) {
   
     return filteredEntries;
   }
+   
+ 
   
   // Función para mostrar los resultados filtrados
   function showEntries(entries) {
