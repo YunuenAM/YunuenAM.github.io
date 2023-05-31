@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/seleccionarPedido.css">
+    <link rel="stylesheet" href="./css/carrito.css">
+    <link rel="stylesheet" href="/src/css/estructura.css">
+    <link rel="stylesheet" href="./css/esqueleto.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Carrito</title>
+</head>
+
+
+   
+<body>
+    
+
+<!-- OffCanvas -->
+
+<section class="section">
+    <h1 class="text-center my-5  heading">Bakery</h1>
+    <div class="d-flex flex-row  bc-purple justify-content-end">
+        <div class="text-md-start  bc-purple text-light  p-5 fs-4">Carrito de Compras</div>
+        <div id="menu2"  class="text-md-center  bg-dark text-light  p-5 fs-4">Ver menú<i class="bi bi-list"></i></div>
+        
+        <header id="header" class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="four columns">
+                       
+                    </div>
+                    <div class="two columns u-pull-right">
+                        <ul>
+                            <li class="submenu">
+                                    <img src="img/cart.png" id="img-carrito">
+                                    <div id="carrito">
+                                            
+                                            <table id="lista-carrito" class="u-full-width">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Imagen</th>
+                                                        <th>Nombre</th>
+                                                        <th>Precio</th>
+                                                        <th>Cantidad</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody></tbody>
+                                            </table>
+        
+                                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+            </header>
+        
+        
+        
+
+        <div id="btn-cerrar-sesion" class="text-md-center  bg-dark text-light  p-5 fs-4">Cerrar sesión<i
+                class="bi bi-person-circle" id="btn-cerrar-sesion"></i></div>
+    </div>
+    <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
+        Administra tus pedidos
+        <i class="bi bi-hand-index-fill"></i></button>
+
+    <div id="menu" class="offcanvas offcanvas-start">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title"></h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+
+        </div>
+        <div class="offcanvas-body text-dark">
+            <h3>Administración</h3>
+            <ul class="nav flex-column list-unstyled">
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">Información de mis pedidos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">Calcula el costo de tu pedido</a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="./seleccionarPedido.html" class="nav-link text-dark">Conoce nuesto menú</a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark">Notificaciones</a>
+                </li>
+            </ul>
+
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+
+    
+
+
+<body>
+
+   
+
+    <div id="lista-panes" class="container">
+        <h1 id="encabezado" class="encabezado">Te damos la bienvenida</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="./img/01-baguette.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Baguette</h4>
+                        <p>Permítenos deleitar tus sentidos con nuestra joya de la corona: nuestro exquisito baguette. Déjame llevarte en un viaje culinario donde la tradición y el sabor se unen para crear una experiencia irresistible.</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$50  <span class="u-pull-right ">$35</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="./img/02-batard.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Batard</h4>
+                            <p>¡Descubre los deliciosos Batards de Panadería Bakery y deja que tus sentidos se deleiten con su sabor excepcional! Nuestros Batards son una obra maestra de la panadería, cuidadosamente elaborados con los mejores ingredientes y horneados a la perfección para ofrecerte una experiencia culinaria única.</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$180  <span class="u-pull-right ">$100</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="./img/03-boule.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Boule</h4>
+                            <p>En la Panadería Bakery, nos enorgullece ofrecer el Boule fresco y recién horneado todos los días. Cada pieza es elaborada con amor y dedicación para garantizar una experiencia gastronómica única y satisfactoria.</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$200  <span class="u-pull-right ">$120</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="./img/04-bagel.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Bagel</h4>
+                        <p>En Panadería Bakery, hemos creado los bagels perfectos para satisfacer tus antojos y deleitar tu paladar. Nuestros bagels son auténticos, hechos con amor y cuidado siguiendo las recetas tradicionales que han sido perfeccionadas a lo largo de los años.</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$55  <span class="u-pull-right ">$25</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="./img/06-pizza.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Pizza Detroit</h4>
+                            <p>¡Descubre nuestra increíble pizza Detroit en Panadería Bakery!
+
+                                Nuestra pizza Detroit es una verdadera joya culinaria que te transportará a las vibrantes calles de la ciudad del motor. Con una receta tradicional y cuidadosamente elaborada, esta pizza es una experiencia gastronómica única que no querrás perderte.</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$325  <span class="u-pull-right ">$250</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="principal" class="menu">
+                                <a class="enlace" href="#">Nuestros Productos</a>
+                                <a class="enlace" href="#">Dudas sobre entregas</a>
+                                <a class="enlace" href="#">Contáctanos</a>
+                                
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secundaria" class="menu">
+                                <a class="enlace" href="#">¿Quienes Somos?</a>
+                                <a class="enlace" href="#">Empleo</a>
+                                <a class="enlace" href="#">Blog</a>
+                            </nav>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal-ingresa" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <!-- Aquí puedes agregar el contenido del modal de compras -->
+        <div class="container">
+            <h2 class="text-center bg-dark text-white" >Te damos la Bienvenida</h2>
+            <div class="row">
+                <div class="col-md-6">
+                   
+                    <img src="./img/logo.jpg" alt="logo" width="500" height="500">
+                 </div>
+
+                <div class="col-md-6 p-5">
+                    <h2>Iniciar sesión</h2>
+                    <form>
+
+                        <div class="form-group p-4">
+                            <label for="username">Usuario</label>
+                            <input type="username" class="form-control" id="usuario" placeholder="ingrese usuario">
+                        </div>
+
+                        <div class="form-group p-4">
+                            <label for="password">Contraseña</label>
+                            <input type="password" class="form-control" id="contraseña" placeholder="ingrese contraseña">
+                        </div>
+                        <button id="btn-iniciar-sesion"type="submit" class=" text-center btn btn-dark m-3 p-2">Inicia sesión</button>
+
+                        <button id="btn-registrarse"type="submit" class=" text-center btn btn-primary m-3 p-2">Registrate</button>
+                        <p id="mensaje-error"></p>
+                    </form>
+
+            </div>
+
+            </div>
+
+        </div>
+      
+        </div>
+      </div>
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/addCarrito.js"></script>
+    <script src="./js/miarchivo.js"></script>
+    <script src="./js/miarchivo2.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/cuenta.js"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/menu.js"></script>
+   
+   
+</body>
+</html>
