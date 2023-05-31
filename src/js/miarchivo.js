@@ -57,6 +57,6 @@ function calcularCostoPedido(){
 // agregarMas()
 
 
-document.getElementById("carrito-icono").addEventListener("click", function(){
+document.getElementById("carrito").addEventListener("click", function(){
     let modal = document.getElementById("modal-compras");
     modal.style.display = "block";})
