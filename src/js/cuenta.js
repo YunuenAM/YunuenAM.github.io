@@ -38,7 +38,7 @@ function  verificarCuenta(event){
     for(let i = 0; i < usuarios.length; i++){
         if(usuario === usuarios[i].nombre && password === usuarios[i].contraseña){
            alert("Bienvenido " + usuarios[i].nombre);
-           window.location.href = "bienvenida.html";
+           window.location.href = "./bienvenida.html";
            window.localStorage.setItem("usuario", usuarios[i].nombre);
            window.localStorage.setItem("correo", usuarios[i].correo);
            window.localStorage.setItem("contraseña", usuarios[i].contraseña);
@@ -52,22 +52,11 @@ function  verificarCuenta(event){
 
     //Reigistramos el usuario en el arreglo de usuarios
 
-    function registrarUsuario(){
-      let nombre = document.getElementById("usuario").value;
-      let correo = document.getElementById("correo").value;
-      let contraseña = document.getElementById("contraseña").value;
-
-      usuarios.push({nombre: nombre, correo: correo, contraseña: contraseña});
-      console.log(usuarios);
-      window.localStorage.setItem("usuario", nombre);
-      window.localStorage.setItem("correo", correo);
-      window.localStorage.setItem("contraseña", contraseña);
-    }
 
    //Funcion para redirigir a la página de inicio de sesión
 
    function redirigir(){
-      window.location.href = "login.html";
+      window.location.href = "./index.html";
    }
    
    //Función para redirigir a la página de inicio de sesión
@@ -75,7 +64,7 @@ function  verificarCuenta(event){
    
    function cerrarSesion(){
       window.localStorage.clear();
-      window.location.href = "index.html";
+      window.location.href = "./index.html";
    }
 
 //seleccion de elementos del DOM
