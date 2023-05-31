@@ -3,7 +3,7 @@
 //Se obtiene el elemento del ícono del carrito
 
 function redirigirCarrito(){
-   window.location.href = "carrito.html";
+   window.location.href = "./carrito.html";
 }
 
 const divCarrito = document.getElementById("cart");
