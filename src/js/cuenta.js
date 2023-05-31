@@ -38,7 +38,7 @@ function  verificarCuenta(event){
     for(let i = 0; i < usuarios.length; i++){
         if(usuario === usuarios[i].nombre && password === usuarios[i].contraseña){
            alert("Bienvenido " + usuarios[i].nombre);
-           window.location.href = "./bienvenida.html";
+           window.location.href = "./index/bienvenida.html";
            window.localStorage.setItem("usuario", usuarios[i].nombre);
            window.localStorage.setItem("correo", usuarios[i].correo);
            window.localStorage.setItem("contraseña", usuarios[i].contraseña);
