@@ -56,7 +56,7 @@ function  verificarCuenta(event){
    //Funcion para redirigir a la página de inicio de sesión
 
    function redirigir(){
-      window.location.href = "./index.html";
+      window.location.href = "#";
    }
    
    //Función para redirigir a la página de inicio de sesión
@@ -64,7 +64,7 @@ function  verificarCuenta(event){
    
    function cerrarSesion(){
       window.localStorage.clear();
-      window.location.href = "./index.html";
+      window.location.href = "/src/index.html";
    }
 
 //seleccion de elementos del DOM
@@ -83,3 +83,23 @@ btnCerrarSesion.addEventListener("click", function(event){
   cerrarSesion()
 });
 btnRegistrarse.addEventListener("click", redirigir);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
