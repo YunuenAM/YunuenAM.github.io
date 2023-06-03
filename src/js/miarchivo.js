@@ -57,6 +57,13 @@ function calcularCostoPedido(){
 // agregarMas()
 
 
-document.getElementById("carrito").addEventListener("click", function(){
+// document.getElementById("carrito").addEventListener("click", function(){
+//     let modal = document.getElementById("modal-compras");
+//     modal.style.display = "block";})
+
+document.getElementById("carrito").addEventListener("click", mostrarModal);
+
+function mostrarModal() {
     let modal = document.getElementById("modal-compras");
-    modal.style.display = "block";})
+    modal.style.display = "block";
+}
