@@ -35,22 +35,36 @@ function  verificarCuenta(event){
 
     //Hacemos un for para recorrer el arreglo de usuarios y verificar si el usuario y contraseña ingresados coinciden con los datos de alguna cuenta existente
 
+
+   //  for (let i = 0; i < usuarios.length; i++) {
+   //    if (usuario === usuarios[i].nombre && password === usuarios[i].contraseña) {
+   //      Swal.fire({
+   //        title: '¡Bienvenido ' + usuarios[i].nombre + '!',
+   //        text: '¡Has iniciado sesión correctamente!',
+   //        icon: 'success',
+   //        timer: 3000, // Tiempo en milisegundos para que la alerta se cierre automáticamente (opcional)
+   //        showConfirmButton: false // Oculta el botón de confirmación (opcional)
+   //      }).then(() => {
+   //        // Redireccionar a bienvenida.html
+   //        window.location.href = "./bienvenida.html";
+   //      });
+
     for(let i = 0; i < usuarios.length; i++){
-        if(usuario === usuarios[i].nombre && password === usuarios[i].contraseña){
-            Swal.fire (
-            '¡"Bienvenido " + usuarios[i].nombre);',
-            '¡Has iniciado sesión correctamente!',)
-           
-         //   window.location.href = "./index/bienvenida.html";
+        
+           window.location.href = "./index/bienvenida.html";
            window.localStorage.setItem("usuario", usuarios[i].nombre);
            window.localStorage.setItem("correo", usuarios[i].correo);
            window.localStorage.setItem("contraseña", usuarios[i].contraseña);
-              return;
-    }
-}
+   //        
+   if(usuario === usuarios[i].nombre && password === usuarios[i].contraseña){
+               Swal.fire (
+               '¡"Bienvenido " + usuarios[i].nombre);',
+               '¡Has iniciado sesión correctamente!',)
+    } else{
+
    mensajeError.innerHTML = "Usuario o contraseña incorrectos";
    
-}
+}}}
 
 
     //Reigistramos el usuario en el arreglo de usuarios
