@@ -100,23 +100,3 @@ btnCerrarSesion.addEventListener("click", function(event){
   cerrarSesion()
 });
 btnRegistrarse.addEventListener("click", redirigir);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -26,7 +26,3 @@ function mostrarModal() {
     modal.style.display = "none";
   }
   });
-
-
-
-
