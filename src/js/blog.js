@@ -4,33 +4,33 @@ const database = [
       title: 'El pan de la abuela',
       content: 'El pan es uno de los alimentos más antiguos y apreciados en todo el mundo. Cada cultura tiene su propia versión, pero hay algo especial en el pan hecho por las abuelas. Ese pan casero, con su aroma y sabor únicos, trae consigo un sentido de nostalgia y calidez que nos transporta a nuestros recuerdos más preciados. En este artículo, exploraremos la magia del "Pan de la Abuela" y cómo este tesoro culinario se convierte en el centro de atención en muchas familias. ',
       autor: 'Hannah',
-      imagen: 'img/02-batard.jpg'
+      imagen: '/src/img/01-baguette.jpg'
       
     },
     {
       title: 'Pan de masa madre',
       content: '¡Bienvenidos a mi blog, amantes del pan! Hoy quiero compartir con ustedes una receta especial que les permitirá disfrutar de un delicioso pan casero utilizando masa madre en un tiempo mucho más corto de lo habitual. La masa madre es un ingrediente mágico que agrega sabor, textura y durabilidad a nuestros panes, pero a menudo se asocia con largos procesos de fermentación. ¡Pero no se preocupen! Hoy les mostraré cómo hacer un pan con masa madre en un abrir y cerrar de ojos.',
       autor: 'Edgar',
-      imagen: 'img/01-baguette.jpg'
+      imagen: '/src/img/01-baguette.jpg'
       
     },
     {
       title: 'Trigo',
       content: '¿Sabías que el trigo es uno de los cultivos más importantes y ampliamente cultivados en todo el mundo? Con su rica historia y su papel crucial en la alimentación humana, el trigo ha dejado una huella indeleble en nuestra civilización. En esta entrada de blog, exploraremos algunos aspectos fascinantes del trigo en un panorama breve.El trigo, científicamente conocido como Triticum, pertenece a la familia de las gramíneas y se cultiva en casi todos los continentes. Es considerado un cereal fundamental, y su versatilidad lo ha convertido en un elemento básico en la dieta de muchas culturas. La planta del trigo es alta, con tallos que pueden alcanzar alturas impresionantes y espigas llenas de granos que se cosechan y procesan para obtener diferentes productos.',
       autor: 'Diana',
-      imagen: 'img/04-bagel.jpg'
+      imagen: '/src/img/01-baguette.jpg'
     },
     {
         title: 'Gluten',
         content: '¿Sabías que el trigo es uno de los cultivos más importantes y ampliamente cultivados en todo el mundo? Con su rica historia y su papel crucial en la alimentación humana, el trigo ha dejado una huella indeleble en nuestra civilización. En esta entrada de blog, exploraremos algunos aspectos fascinantes del trigo en un panorama breve.El trigo, científicamente conocido como Triticum, pertenece a la familia de las gramíneas y se cultiva en casi todos los continentes. Es considerado un cereal fundamental, y su versatilidad lo ha convertido en un elemento básico en la dieta de muchas culturas. La planta del trigo es alta, con tallos que pueden alcanzar alturas impresionantes y espigas llenas de granos que se cosechan y procesan para obtener diferentes productos.',
         autor: 'Sara',
-        imagen: 'img/04-bagel.jpg'
+        imagen: '/src/img/01-baguette.jpg'
       },
       {
         title: 'Bagel',
         content: '¿Sabías que el trigo es uno de los cultivos más importantes y ampliamente cultivados en todo el mundo? Con su rica historia y su papel crucial en la alimentación humana, el trigo ha dejado una huella indeleble en nuestra civilización. En esta entrada de blog, exploraremos algunos aspectos fascinantes del trigo en un panorama breve.El trigo, científicamente conocido como Triticum, pertenece a la familia de las gramíneas y se cultiva en casi todos los continentes. Es considerado un cereal fundamental, y su versatilidad lo ha convertido en un elemento básico en la dieta de muchas culturas. La planta del trigo es alta, con tallos que pueden alcanzar alturas impresionantes y espigas llenas de granos que se cosechan y procesan para obtener diferentes productos.',
         autor: 'Julieta',
-        imagen: 'img/04-bagel.jpg'
+        imagen: '/src/img/01-baguette.jpg'
       }
   ];
 
