@@ -7,20 +7,50 @@ const contenedorCarrito = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.querySelector('#vaciar-carrito'); 
 let articulosCarrito = [];
 
-// Listeners
-cargarEventListeners();
+// // Listeners
 
-function cargarEventListeners() {
-     // Dispara cuando se presiona "Agregar Carrito"
-     listaPanes.addEventListener('click', agregarPan);
+document.addEventListener("DOMContentLoaded", function(){
+     cargarEventListeners();
 
-     // Cuando se elimina un pane del carrito
-     carrito.addEventListener('click', eliminarPan);
+});
+ function cargarEventListeners(){
+     const listaPanes = document.getElementById("lista-panes");
+     const carrito = document.getElementById("carrito");
+     const vaciarCarritoBtn = document.getElementById("vaciar-carrito");
 
-     // Al Vaciar el carrito
-     vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
+     //Dispara cuando se dispara agregar carrito
 
-     //Recuperar carrito en local storage al cargar la página
+     if (listaPanes){
+          listaPanes.addEventListener('click', agregarPan);
+     }
+
+     //Cuando se elimina un pan del carrito
+     if(carrito){
+          carrito.addEventListener('click', eliminarPan);
+     }
+
+     //Al vaciar carrito
+
+     if (vaciarCarritoBtn){
+          vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
+     }
+
+ }
+
+
+// cargarEventListeners();
+
+// function cargarEventListeners() {
+//      // Dispara cuando se presiona "Agregar Carrito"
+//      listaPanes.addEventListener('click', agregarPan);
+
+//      // Cuando se elimina un pane del carrito
+//      carrito.addEventListener('click', eliminarPan);
+
+//      // Al Vaciar el carrito
+//      vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
+
+//      //Recuperar carrito en local storage al cargar la página
 
      document.addEventListener('DOMContentLoaded', () => {
         if(localStorage.getItem('carrito')){
@@ -29,7 +59,7 @@ function cargarEventListeners() {
         }
     });
 
-}
+
 
 
 // Función que añade el pan al carrito
