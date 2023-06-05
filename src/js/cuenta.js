@@ -96,7 +96,8 @@ btnIniciarSesion.addEventListener("click", function(event){
     verificarCuenta(event);
 });
 
-btnCerrarSesion.addEventListener("click", function(event){
-  cerrarSesion()
-});
-btnRegistrarse.addEventListener("click", redirigir);
+if (btnCerrarSesion) {
+    btnCerrarSesion.addEventListener("click", function(event) {
+      cerrarSesion();
+    });
+  }
