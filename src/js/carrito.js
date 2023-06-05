@@ -11,6 +11,3 @@ const iconoCarrito = document.getElementById(".bi-cart");
 
 //Se agrega el evento click al ícono del carrito
 
-divCarrito.addEventListener("click", redirigirCarrito);
-iconoCarrito.addEventListener("click", redirigirCarrito);
-
