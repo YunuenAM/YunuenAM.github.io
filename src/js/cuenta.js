@@ -81,7 +81,7 @@ function  verificarCuenta(event){
    
    function cerrarSesion(){
       window.localStorage.clear();
-      window.location.href = "/src/index.html";
+      window.location.href = "/";
    }
 
 //seleccion de elementos del DOM
