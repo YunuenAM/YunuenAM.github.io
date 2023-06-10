@@ -1,0 +1,690 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family:'helvetica';
+    list-style: none;
+    background-color: white;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: black;
+    position: fixed;
+    z-index: 50;
+}
+
+
+header-pinterest{
+    display: flex;
+    font-size: smaller;
+}
+header nav{
+    display: flex;
+    margin-left: 10px;
+}
+
+header nav li{
+    display: flex;
+    margin: 4% 0;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+header nav li i{
+   font-size: smaller;
+   
+}
+
+.boton{
+    
+    border: 1px solid black;
+    background-color: black;
+    color:white;
+    border-radius: 80px;
+    font-size: xx-large;
+    padding: 2%;
+    margin-top: 4%;
+}
+
+.boton i{
+    display: none;
+}
+
+.dos{
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+}
+
+
+.tres{
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+}
+
+
+
+
+
+input[type="search"]{
+    display: flex;
+    position: relative;
+    border: 4px solid lightgrey;
+    border-radius: 800px;
+    background-color: lightgray;
+    margin-top: 60px;
+    width: 670px;
+    height: 90px;
+}
+
+.input-finder {
+    display: flex;
+    position: relative;
+    width: 600px;
+  }
+  
+  .input {
+    box-sizing: border-box;
+    color: #191919;
+    padding: 15px 15px 15px 100px;
+    width: 100%;
+  }
+  
+  
+  .input-icon {
+    background-color: lightgrey;
+    color: #191919;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 50px;
+    top: 58%;
+    transform: translateY(-50%);
+    background-size: 26px;
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+
+
+.box-icons{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    justify-content: space-around;
+    font-size: x-large;
+    margin-top: 10%;
+}
+
+
+.box-icons li{
+    padding: 10px 20px;
+    cursor: pointer;
+    align-items: center;
+    margin-left: auto;
+    justify-content: space-between;
+}
+
+.box-icons li i{
+    color: rgb(146, 140, 140);
+    font-size: xx-large;
+}
+
+#mostrador{
+    width: 100%;
+   
+}
+
+.opciones{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 5% 35%;
+    cursor: pointer;
+}
+
+.explorar{
+    text-decoration: underline;
+}
+
+#galeria{
+    display: grid;
+    column-count: 3;
+    column-gap: 0;
+    gap: 10% 10%;
+    padding: 10px 20px;
+  }
+
+
+.img-fluid{
+    width: 100%;
+}
+
+.card-image{
+   margin-left: 10px;
+   width: 100%;
+   column-count: 4;
+   padding:10px;
+   margin-bottom: 10px;
+   break-inside: avoid;
+   padding-top: 220px;
+    /* column-gap: 10px;
+    row-gap: 30px; */
+}
+
+.card-image img{
+    border-radius: 50px;
+    display: grid;
+    margin-bottom: 20px;
+    transform: scale(1,1);
+    cursor: zoom-in;
+    
+     
+}
+
+.uno{
+    position: relative;
+    
+}
+
+.doss{
+    position: relative;
+}
+
+img{
+    display: block;
+}
+
+.card-image{
+    position: relative;
+}
+
+.capa_hover{
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    opacity: 0;
+}
+
+.capa_hover:hover{
+    opacity: 1;
+}
+
+.guardar{
+    position: absolute;
+    cursor: pointer;
+    align-self: flex-start;
+    justify-self: flex-end;
+    background-color: red;
+    left: 60%;
+    color: white;
+    top: 10%;
+    padding: 15px;
+    border-radius: 70px;
+    font-size: xx-large;
+    font-size: larger;
+
+}
+
+
+
+
+
+
+.card-image:hover{
+    cursor: pointer;
+    opacity:1.0;
+   filter:alpha(opacity=100); /* For IE8 and earlier */
+   
+   
+}
+
+
+
+
+.uno:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+
+}
+
+.doss:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+
+}
+
+.tress:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+
+}
+
+.cuatro:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+
+}
+
+.cinco:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+
+}
+
+.seis:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+
+}
+
+.siete:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+
+}
+
+.ocho:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+
+}
+
+.nueve:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+
+}
+
+.diez:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+
+}
+
+
+.once:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+
+}
+
+.doce:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+
+}
+
+.trece:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+
+}
+
+.catorce:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+
+}
+
+.quince:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+
+}
+
+.dieciseis:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+
+}
+
+
+.diecisiete:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+
+}
+
+.dieciocho:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.dieciocho:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+
+.dieciocho:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.diecinueve:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+
+.veinte:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+
+.veintidos:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.veintitres:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.veinticuatro:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.veinticinco:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.veintiseis:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.veintisiete:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.veintiocho:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.veintinueve:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.treinta:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.treintados:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.treintatres:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.treintacuatro:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.treintacinco:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.treintaseis:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.treintasiete:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.treintaocho:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.treintanueve:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.cuarenta:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.cuarentauno:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.cuarentados:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    filter:alpha(opacity=20)
+}
+
+.finder{
+    display: flex;
+}
+
+.boton u {
+    display: none;
+}
+
+
+/* Aplicación de media queries */
+
+@media screen and (max-width: 1024px){
+    .card-image{
+        column-count: 4;
+
+      
+    }
+
+    .container{
+        width: 40%;
+    }
+
+    .input-finder{
+        width: 40%;
+
+    }
+
+    .boton i{
+        display: none;
+    }
+}
+
+    @media screen and (max-width: 768px){
+        .card-image{
+            column-count: 3;
+    
+    }
+
+
+    .container{
+        width: 20%;
+    }
+
+    .boton{
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: none;
+    }
+
+
+    .boton i{
+        display: inline;
+    }
+    .boton u {
+        display: none;
+    }
+    .dos{
+        display: none;
+    }
+
+    .tres{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    .card-image{
+        column-count: 2;
+       
+    }
+
+    .container{
+        width: 30%;
+    }
+
+    
+    
+    .input-finder{
+        display: none;
+    }
+
+    .boton{
+        margin-top: 11%;
+    }
+
+    .boton u {
+        display: inline;
+    }
+    .box-icons{
+        margin-top: 4%;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 320px){
+    .card-image{
+        column-count: 2;
+       
+    }
+
+    .container{
+        width: 5%;
+    }
+
+    .boton u{
+        display: inline;
+ 
+}
+
+    .boton i{
+        display: none;
+    }
+
+
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
