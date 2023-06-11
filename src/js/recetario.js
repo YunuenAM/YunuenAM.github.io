@@ -1,4 +1,3 @@
-
 const url = 'https://www.themealdb.com/api/json/v1/1/search.php?s=';
 const searchTerm = 'pan'; // término de búsqueda de ejemplo
 
@@ -24,7 +23,7 @@ fetch(url + searchTerm)
       `;
     });
 
-    container.innerHTML = html;
+    container.innerHTML = html
   })
   .catch(error => {
     // Manejo de errores

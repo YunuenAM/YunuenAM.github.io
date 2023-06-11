@@ -33,21 +33,7 @@ function  verificarCuenta(event){
     let password = document.getElementById("contraseña").value;
     let mensajeError = document.getElementById("mensaje-error");
 
-    //Hacemos un for para recorrer el arreglo de usuarios y verificar si el usuario y contraseña ingresados coinciden con los datos de alguna cuenta existente
-
-
-   //  for (let i = 0; i < usuarios.length; i++) {
-   //    if (usuario === usuarios[i].nombre && password === usuarios[i].contraseña) {
-   //      Swal.fire({
-   //        title: '¡Bienvenido ' + usuarios[i].nombre + '!',
-   //        text: '¡Has iniciado sesión correctamente!',
-   //        icon: 'success',
-   //        timer: 3000, // Tiempo en milisegundos para que la alerta se cierre automáticamente (opcional)
-   //        showConfirmButton: false // Oculta el botón de confirmación (opcional)
-   //      }).then(() => {
-   //        // Redireccionar a bienvenida.html
-   //        window.location.href = "./bienvenida.html";
-   //      });
+  
 
     for(let i = 0; i < usuarios.length; i++){
         
@@ -67,9 +53,6 @@ function  verificarCuenta(event){
 }}}
 
 
-    //Reigistramos el usuario en el arreglo de usuarios
-
-
    //Funcion para redirigir a la página de inicio de sesión
 
    function redirigir(){
@@ -81,7 +64,7 @@ function  verificarCuenta(event){
    
    function cerrarSesion(){
       window.localStorage.clear();
-      window.location.href = "./index";
+      window.location.href = "./";
    }
 
 //seleccion de elementos del DOM
