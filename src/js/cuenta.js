@@ -41,16 +41,13 @@ function  verificarCuenta(event){
            window.localStorage.setItem("usuario", usuarios[i].nombre);
            window.localStorage.setItem("correo", usuarios[i].correo);
            window.localStorage.setItem("contraseña", usuarios[i].contraseña);
-   //        
-   if(usuario === usuarios[i].nombre && password === usuarios[i].contraseña){
-               Swal.fire (
-               '¡"Bienvenido " + usuarios[i].nombre);',
-               '¡Has iniciado sesión correctamente!',)
-    } else{
+   //  Usando operadores ternarios en la alerta      
+   (usuario === usuarios[i].nombre && password === usuarios[i].contraseña) ?
+  (Swal.fire('¡Bienvenido ' + usuarios[i].nombre, '¡Has iniciado sesión correctamente!')) :
+  (mensajeError.innerHTML = "Usuario o contraseña incorrectos");
 
-   mensajeError.innerHTML = "Usuario o contraseña incorrectos";
    
-}}}
+}}
 
 
    //Funcion para redirigir a la página de inicio de sesión
