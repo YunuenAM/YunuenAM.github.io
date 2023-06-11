@@ -25,16 +25,12 @@ fetch(url + searchTerm)
     
 
     document.addEventListener('DOMContentLoaded', () => {
-      // Código que accede a los elementos del DOM
-    
       const container = document.getElementById('container');
-      if (container) {
-        container.innerHTML = html;
-      } else {
-        console.error("El elemento 'container' no se encuentra en el DOM.");
-      }
+      container ? container.innerHTML = html : console.error("El elemento 'container' no se encuentra en el DOM.");
     });
     
+
+   
     container.innerHTML = html
   })
   .catch(error => {

@@ -87,11 +87,7 @@ function leerDatosPan(pan) {
 
      //Guardar carrito en local storage
      localStorage.setItem('carrito', JSON.stringify(articulosCarrito));
-     // console.log(articulosCarrito)
-
-     
-
-     // console.log(articulosCarrito)
+ 
      carritoHTML();
 }
 

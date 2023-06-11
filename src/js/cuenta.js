@@ -62,27 +62,6 @@ function  verificarCuenta(event){
   }
   
 
-//    if (cuentaEncontrada){
-
-//       window.location.href = "./index/bienvenida.html";
-        
-          
-          
-//    //  Usando operadores ternarios en la alerta      
-  
-//   Swal.fire({
-//    title: '¡Bienvenido ' + usuarios[i].nombre, 
-//    text: '¡Has iniciado sesión correctamente!',
-//    timer: 5000,
-//    showConfirmButton:false
-//   }) ;
-
-// } else{
-//   (mensajeError.innerHTML = "Usuario o contraseña incorrectos");
-
-   
-// }}
-
 
    //Funcion para redirigir a la página de inicio de sesión
 
