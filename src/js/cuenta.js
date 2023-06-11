@@ -33,21 +33,55 @@ function  verificarCuenta(event){
     let password = document.getElementById("contraseña").value;
     let mensajeError = document.getElementById("mensaje-error");
 
+    let cuentaEncontrada = false;
+
+    for (let i = 0; i < usuarios.length; i++) {
+      if (usuario === usuarios[i].nombre && password === usuarios[i].contraseña) {
+        cuentaEncontrada = true;
+        window.localStorage.setItem("usuario", usuarios[i].nombre);
+        window.localStorage.setItem("correo", usuarios[i].correo);
+        window.localStorage.setItem("contraseña", usuarios[i].contraseña);
+        break;
+      }
+    }
+
+
+    if (cuentaEncontrada) {
+      Swal.fire({
+        title: '¡Bienvenido ' + usuario,
+        text: '¡Has iniciado sesión correctamente!',
+        timer: 2000,
+        showConfirmButton: false
+      }).then((result) => {
+        window.location.href = "./index/bienvenida.html";
+      });
+    } else {
+      mensajeError.innerHTML = "Usuario o contraseña incorrectos";
+      mensajeError.classList.add("error-message");
+    }
+  }
   
 
-    for(let i = 0; i < usuarios.length; i++){
+//    if (cuentaEncontrada){
+
+//       window.location.href = "./index/bienvenida.html";
         
-           window.location.href = "./index/bienvenida.html";
-           window.localStorage.setItem("usuario", usuarios[i].nombre);
-           window.localStorage.setItem("correo", usuarios[i].correo);
-           window.localStorage.setItem("contraseña", usuarios[i].contraseña);
-   //  Usando operadores ternarios en la alerta      
-   (usuario === usuarios[i].nombre && password === usuarios[i].contraseña) ?
-  (Swal.fire('¡Bienvenido ' + usuarios[i].nombre, '¡Has iniciado sesión correctamente!')) :
-  (mensajeError.innerHTML = "Usuario o contraseña incorrectos");
+          
+          
+//    //  Usando operadores ternarios en la alerta      
+  
+//   Swal.fire({
+//    title: '¡Bienvenido ' + usuarios[i].nombre, 
+//    text: '¡Has iniciado sesión correctamente!',
+//    timer: 5000,
+//    showConfirmButton:false
+//   }) ;
+
+// } else{
+//   (mensajeError.innerHTML = "Usuario o contraseña incorrectos");
 
    
-}}
+// }}
 
 
    //Funcion para redirigir a la página de inicio de sesión
