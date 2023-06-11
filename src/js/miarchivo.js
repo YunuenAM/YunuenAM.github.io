@@ -30,37 +30,6 @@ function calcularCostoPedido(){
     document.getElementById("costo").textContent = `${costo.toFixed(2)}`; //Muestra el costo total del pedido utilizando el método toFixed para mostrar solo dos decimales y se ocupa getElementsByClassName para obtener el elemento con el id costo y mostrar el costo total del pedido en el HTML
 }
 
-
-////Algoritmo sencillo para saber si el cliente desea agregar más productos a su carrito de compras
-
-
-// const agregarMas= ()=>{
-    
-//     let continuar = 'si';
-//     let pedido = prompt('Ingrese el pan que deseas agregar a tu carrito de compras')
-    
-//     while(continuar ==="si" || continuar ==="sí"){
-    
-//         continuar =prompt('¿Deseas agregar más productos a tu carrito?');
-
-//         if(continuar === 'si'|| continuar ==='sí'){
-//             pedido= prompt('Ingrese el pan que desea agregar')
-            
-//         } 
-    
-//     }
-//     alert('Gracias por tu compra')
-
-// }
-
-
-// agregarMas()
-
-
-// document.getElementById("carrito").addEventListener("click", function(){
-//     let modal = document.getElementById("modal-compras");
-//     modal.style.display = "block";})
-
 document.addEventListener("DOMContentLoaded", function(){
 let elemento = document.getElementById("carrito");
 

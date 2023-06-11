@@ -20,19 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
     modal.style.display = "none"
   });
 
-// document.getElementById("icono-ingresa").addEventListener("click", function() {
-//     // Aquí puedes agregar el código para abrir el modal de compras
-//     const modal = document.getElementById("modal-ingresa");
-//     modal.style.display = "block";
-
-//    // Obtener referencia al elemento de cierre del modal
-// const closeBtn = document.querySelector(".close");
-
-// // Agregar evento de click al elemento de cierre
-// closeBtn.addEventListener("click", function() {
-//   const modal = document.getElementById("modal-ingresa");
-//   modal.style.display = "none";
-// });
 
     // Función para mostrar el modal
 function mostrarModal() {

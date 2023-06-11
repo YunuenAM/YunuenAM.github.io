@@ -37,19 +37,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
  }
 
-
-// cargarEventListeners();
-
-// function cargarEventListeners() {
-//      // Dispara cuando se presiona "Agregar Carrito"
-//      listaPanes.addEventListener('click', agregarPan);
-
-//      // Cuando se elimina un pane del carrito
-//      carrito.addEventListener('click', eliminarPan);
-
-//      // Al Vaciar el carrito
-//      vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
-
 //      //Recuperar carrito en local storage al cargar la página
 
      document.addEventListener('DOMContentLoaded', () => {
@@ -157,8 +144,7 @@ function vaciarCarrito() {
 
     localStorage.removeItem ('carrito'); 
 }
-     // forma lenta
-     // contenedorCarrito.innerHTML = '';
+     
 
 // Elimina los panes del carrito en el DOM
 
