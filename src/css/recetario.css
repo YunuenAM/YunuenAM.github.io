@@ -1,0 +1,34 @@
+#galeria{
+    display: grid;
+    column-count: 2;
+    column-gap: 0;
+    gap: 10% 10%;
+    padding: 10px 20px;
+  }
+
+
+.img-fluid{
+    width: 100%;
+}
+
+.card-image{
+   margin-left: 10px;
+   width: 100%;
+   column-count: 4;
+   padding:50px;
+   margin-bottom: 10px;
+   break-inside: avoid;
+   padding-top: 20px;
+    /* column-gap: 10px;
+    row-gap: 30px; */
+}
+
+.card-image img{
+    border-radius: 50px;
+    display: grid;
+    margin-bottom: 20px;
+    transform: scale(1,1);
+    cursor: zoom-in;
+    
+     
+}
