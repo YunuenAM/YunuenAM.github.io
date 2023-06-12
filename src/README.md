@@ -1,28 +1,53 @@
-Tercera Entrega hacia el Proyecto Final🦄
+Entrega del Proyecto Final🎊
 
+De acuerdo con la consigna de Proyecto Final, este trabajo contiene:
 
-De acuerdo a la consigna de pre-entrega, este trabajo contiene
+⭕Objetos y Arrays. Métodos Arrays:
 
+filter() 
 
-1. Implemetación con uso de JSON y Storage
-2. Modificación del DOM y detección de eventos de usuario
+forEach() 
 
-Formato:
+map()
 
-Página HTML y código fuente en JavaScript
+⭕Funciones y condicionales
 
-Lo nuevo en esta pre-entrega en js contiene:
+funciones tradicionales
 
-💻-Un archivo carrito.js dónde se implementa una función que al dar click al carrito muestre el carrito de compras
+funciones flecha
 
-💻-Un archivo addCarrito  que mediante código, captura el evento agregar a carrito de cada producto, obteniendo la cantidad seleccionada y la almacena en el local storage mismos datos que serán recuperados y generar un carrito dinámicamente con los productos seleccionados. Ejemplo :
+switch,case
 
-`localStorage.setItem('carrito',JSON.stringify(articulosCarrito));`
+operador ternario 
 
-💻-Un archivo modal.js donde se añade un evento al ícono ingresa para que al dar click acceda a la página del login a través del modal
+if,else
 
-💻-Un archivo cuenta.js donde se encuentra dentro de un array de objetos las cuentas una database (hardcodeada)  de usuarios, email y contraseñas, así como las funciones que permiten verificarCuenta, y cerrar sesión.
+⭕Generación del DOM de forma dinámica. Eventos.
 
-💻-Un archivo blog.js en el cuál mediante un input se puede hacer la búsqueda de entradas por autor del blog, se usa el método filter() e includes()
+⭕Local Storage
 
-Nota: Es recomendable acceder desde el index.html y al iniciar sesión utilizar el nombre de Manuel (o consúltese las cuentas) y la contraseña :"123za456&12"
+Se utiliza para la persistencia de datos  de los productos de panadería añadidos al carrito de compras.
+
+⭕Sintaxis Avanzada
+
+Se utiliza spread operator(...)
+
+⭕Al menos una librería de uso relevante para el proyecto
+
+Se utiliza sweet alert para estilizar la alerta del inicio de sesión
+
+⭕Manejo de promesas con fetch
+
+Se  hace uso de fecth en el archivo recetario
+
+⭕Carga de datos desde una API externa
+
+Se  manda llamar a una API llamada  Meal DB que es de acceso gratuito
+
+Recomendaciones de navegación:
+
+Actualmente las partes habilitadas de este sitio solo están disponibles para computadora, se puede iniciar sesión, ver galería fe fotos (dento de la galería se puede ir al blog y filtrar las entradas por nombre de autor, por ejemplo 'Edgar' o 'Hannah' si regresará una entrada; también se puede desde la galería regresar al inicio que es la página de bienvenida), ver recetario, ver carrito de compras y cerrar sesión. 
+
+💻Este sitio se encuentra con deploy para fines didácticos en la siguiente página:
+
+https://64873904087f7e494f1fff24--roaring-rabanadas-a66b89.netlify.app/index.html
