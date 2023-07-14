@@ -23,7 +23,7 @@
     <h1 class="text-center text-light fs-3 my-5  heading">Bakery</h1>
     <div class="d-flex flex-row  bg-white justify-content-end">
         <div class="text-md-start  bg-pink text-light  p-5 fs-4">Welcome to bad bap</div>
-        <div  class="text-md-center  bg-pink text-light  p-5 fs-4"><a href= "./recetario.html">Recipe book</a><i class="bi bi-list"></i></div>
+        <div  class="text-md-center  bg-pink text-aqua text-decoration-none   p-5 fs-4"><a href= "./recetario.html">Recipe book</a><i class="bi bi-list"></i></div>
         <div  class="text-md-center  bg-pink text-light  p-5 fs-4"><a href= "./galería.html">Gallery</a><i class="bi bi-camera-fill"></i></div>
         <div id="cart"class="text-md-center  bg-pink text-light  p-5 fs-4"><a href="../index/carrito.html">Cart</a><i class="bi bi-cart"></i></div>
         <div id="btn-cerrar-sesion" class="text-md-center  bg-pink text-light  p-5 fs-4"><a href="../index.html">Sign out</a><i class="bi bi-person-circle" id="btn-cerrar-sesion"></i></div>
@@ -242,9 +242,9 @@ Container con dos columnas -->
     <div class="col-md-6">
           <section class="seccion">
                
-             <div class="container-xl">
+             <div class="container-xl bg-pink">
                  <div class="card h-100 ">
-                     <div class="col-md-12">
+                     <div class="col-md-12 bg-pink">
                          <div class="card mb-4"></div>
                 
                              <div class="card-header">
@@ -252,12 +252,12 @@ Container con dos columnas -->
                              </div>
                              <div class="card-body ">
                                 <div class="m-3">
-                                <h1 class="text-end my-3 heading">Haz tu pedido</h1>
+                                <h1 class="text-end  bg- pink text-magenta my-3 heading">Make your order</h1>
                                  <h3 class="card-title"> </h3>
-                                 <p class="card-text">Sólo necesitas registrarte, una vez creado tu perfil de usuario accede a Administra tus pedidos, da click en pedidos, selecciona el producto y el número de ellos, realiza tu compra y recibe tu notificación, te invitamos a visitarnos en Intagram así como en nuestro blog.<i class="bi bi-universal-access text-center fs-6"></i></p>
+                                 <p class="card-text text-pink">We invite you to visit us on Instagram as well as on our blog .<i class="bi bi-universal-access text-center fs-6"></i></p>
 
                                  <div class="text-center p-2">
-                                    <label for="producto">Selecciona un producto</label>
+                                    <label for="producto">Select your bread</label>
                                     <select id="producto">
                                         <option value="baguette">Baguette</option>
                                         <option value="batard">Batard</option>
@@ -268,21 +268,21 @@ Container con dos columnas -->
                                 </div>
                             
                                 <div class="text-center p-2">
-                                    <label for="cantidad">Cantidad</label>
+                                    <label for="cantidad">Total quantity</label>
                                     <input type="number" id="cantidad" min="1">
                                 </div>
                             
                                 <div class="text-center p-3">
-                                    <button type= "button" class=" btn btn-dark" onclick="calcularCostoPedido()">calcular</button>
+                                    <button type= "button" class=" btn btn-aqua" onclick="calcularCostoPedido()">calculate</button>
                                 </div>
                             
                                 <div>
-                                    <p>El cálculo total es: <span id="costo"></span></p>
+                                    <p>Total: <span id="costo"></span></p>
                                   </div>
                                 
 
-                                 <img src="../img/logo.png" class="d-flex w-25 rounded mx-auto d-block" alt="">
-                                 <a href="#" class="btn btn-dark d-block">Comprar</a>
+                                 <img src="../img/logo.png" class="d-flex w-25  p-3  mt-1 mx-auto d-block" alt="">
+                                 <a href="#" class="btn btn-aqua d-block">Comprar</a>
                              </div>
                         </div>
                              

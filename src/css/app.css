@@ -49,10 +49,10 @@ body{
 
 
 .modal-ingresa {
-    background-color: white;
+    background-color: aquamarine;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid aquamarine;
     width: 80%;
   }
   
@@ -66,6 +66,7 @@ body{
 
 .close:hover,
 .close:focus {
+  background-color: mediumvioletred;
   color: pink;
   text-decoration: none;
   cursor: pointer;
@@ -88,6 +89,25 @@ body{
 } 
 
 
-.bg-blue{
-  color: aqua !important;
+
+
+.btn-aqua{
+
+background-color: aquamarine;
+
+} 
+
+
+.text-aqua{
+  color: aquamarine;
+
+}
+
+
+.text-magenta{
+  color: #c33b80;
+}
+
+.bg-aqua{
+  background-color: aquamarine;
 }

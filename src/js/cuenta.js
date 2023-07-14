@@ -48,15 +48,15 @@ function  verificarCuenta(event){
 
     if (cuentaEncontrada) {
       Swal.fire({
-        title: '¡Bienvenido ' + usuario,
-        text: '¡Has iniciado sesión correctamente!',
+        title: 'Welcome ' + usuario,
+        text: '¡You have successfully logged in!',
         timer: 2000,
         showConfirmButton: false
       }).then((result) => {
         window.location.href = "./index/bienvenida.html";
       });
     } else {
-      mensajeError.innerHTML = "Usuario o contraseña incorrectos";
+      mensajeError.innerHTML = "Wrong password, please try again";
       mensajeError.classList.add("error-message");
     }
   }
