@@ -1,36 +1,38 @@
 // Datos de prueba hardcodeados
 const database = [
     {
-      title: 'El pan de la abuela',
-      content: 'El pan es uno de los alimentos más antiguos y apreciados en todo el mundo. Cada cultura tiene su propia versión, pero hay algo especial en el pan hecho por las abuelas. Ese pan casero, con su aroma y sabor únicos, trae consigo un sentido de nostalgia y calidez que nos transporta a nuestros recuerdos más preciados. En este artículo, exploraremos la magia del "Pan de la Abuela" y cómo este tesoro culinario se convierte en el centro de atención en muchas familias. ',
-      autor: 'Hannah',
-      imagen: '/src/img/01-baguette.jpg'
+      
+      title: "Grandma's bread",
+      content: 'Bread is one of the oldest and most appreciated foods in the world. Each culture has its own version, but there is something special about bread made by grandmothers. That homemade bread, with its unique aroma and flavor, brings with it a sense of nostalgia and warmth that transports us to our most precious memories. In this article, we will explore the magic of Grandma´s Bread and how this culinary treasure becomes the center of attention in many families.',
+      author: 'Hannah',
+      imagen: '/src/img/hannah.png'
       
     },
     {
-      title: 'Pan de masa madre',
-      content: '¡Bienvenidos a mi blog, amantes del pan! Hoy quiero compartir con ustedes una receta especial que les permitirá disfrutar de un delicioso pan casero utilizando masa madre en un tiempo mucho más corto de lo habitual. La masa madre es un ingrediente mágico que agrega sabor, textura y durabilidad a nuestros panes, pero a menudo se asocia con largos procesos de fermentación. ¡Pero no se preocupen! Hoy les mostraré cómo hacer un pan con masa madre en un abrir y cerrar de ojos.',
-      autor: 'Edgar',
-      imagen: '/src/img/01-baguette.jpg'
+     
+      title: 'Sourdough bread',
+      content: "Welcome to my blog, bread lovers! Today I want to share with you a special recipe that will allow you to enjoy a delicious homemade bread using sourdough in a much shorter time than usual. Sourdough is a magical ingredient that adds flavor, texture, and durability to our breads, but it is often associated with lengthy fermentation processes. But don't worry Today I will show you how to make sourdough bread in the blink of an eye",
+      author: 'John',
+      imagen: '/src/img/John.png'
       
     },
     {
-      title: 'Trigo',
-      content: '¿Sabías que el trigo es uno de los cultivos más importantes y ampliamente cultivados en todo el mundo? Con su rica historia y su papel crucial en la alimentación humana, el trigo ha dejado una huella indeleble en nuestra civilización. En esta entrada de blog, exploraremos algunos aspectos fascinantes del trigo en un panorama breve.El trigo, científicamente conocido como Triticum, pertenece a la familia de las gramíneas y se cultiva en casi todos los continentes. Es considerado un cereal fundamental, y su versatilidad lo ha convertido en un elemento básico en la dieta de muchas culturas. La planta del trigo es alta, con tallos que pueden alcanzar alturas impresionantes y espigas llenas de granos que se cosechan y procesan para obtener diferentes productos.',
-      autor: 'Diana',
-      imagen: '/src/img/01-baguette.jpg'
+      title: 'Wheat',
+      content: 'Did you know that wheat is one of the most important and immensely cultivated crops worldwide? With its rich history and crucial role in human nutrition, wheat has left an indelible mark on our civilization. In this blog post, we will explore some fascinating aspects of wheat in a brief overview. Wheat, scientifically known as Triticum, belongs to the grass family and is grown on almost every continent. It is considered a fundamental grain, and its versatility has made it a staple in the diet of many cultures. The wheat plant is tall, with stalks that can reach impressive heights and ears full of grains that are harvested and processed into different products.',
+      author: 'Diana',
+      imagen: '/src/img/baker.png'
     },
     {
         title: 'Gluten',
-        content: '¿Sabías que el trigo es uno de los cultivos más importantes y ampliamente cultivados en todo el mundo? Con su rica historia y su papel crucial en la alimentación humana, el trigo ha dejado una huella indeleble en nuestra civilización. En esta entrada de blog, exploraremos algunos aspectos fascinantes del trigo en un panorama breve.El trigo, científicamente conocido como Triticum, pertenece a la familia de las gramíneas y se cultiva en casi todos los continentes. Es considerado un cereal fundamental, y su versatilidad lo ha convertido en un elemento básico en la dieta de muchas culturas. La planta del trigo es alta, con tallos que pueden alcanzar alturas impresionantes y espigas llenas de granos que se cosechan y procesan para obtener diferentes productos.',
-        autor: 'Sara',
-        imagen: '/src/img/01-baguette.jpg'
+        content: "Gluten has been the subject of debate and controversy in recent years. For some, it's a food villain to be avoided at all costs, while others consider it an essential part of a balanced diet. In this article, we'll explore what exactly gluten is, how it affects our bodies, and how to approach its consumption in an informed way. Gluten is a protein found in several grains, such as wheat, barley, and rye. Its main function is to provide elasticity and structure to baked goods, such as bread and cakes. However, for people with celiac disease, an autoimmune condition, gluten can trigger a damaging immune response that affects the lining of the small intestine. Additionally, some people may experience non-celiac gluten sensitivity, which causes digestive symptoms and discomfort.",
+        author: 'Sara',
+        imagen: '/src/img/bakery4.png'
       },
       {
         title: 'Bagel',
-        content: '¿Sabías que el trigo es uno de los cultivos más importantes y ampliamente cultivados en todo el mundo? Con su rica historia y su papel crucial en la alimentación humana, el trigo ha dejado una huella indeleble en nuestra civilización. En esta entrada de blog, exploraremos algunos aspectos fascinantes del trigo en un panorama breve.El trigo, científicamente conocido como Triticum, pertenece a la familia de las gramíneas y se cultiva en casi todos los continentes. Es considerado un cereal fundamental, y su versatilidad lo ha convertido en un elemento básico en la dieta de muchas culturas. La planta del trigo es alta, con tallos que pueden alcanzar alturas impresionantes y espigas llenas de granos que se cosechan y procesan para obtener diferentes productos.',
-        autor: 'Julieta',
-        imagen: '/src/img/01-baguette.jpg'
+        content: "The bagel has its roots in Eastern Europe, specifically in Jewish communities. Although its exact origin is uncertain, bagels are believed to have originated in Poland in the 17th century. These round buns became popular among Jews due to their versatility and ability to stay fresh longer. Over time, bagels spread beyond Jewish communities and became a beloved food around the world. Varieties and flavors:Today, bagels come in a wide variety of flavors and textures. From classic sesame bagels and everything to more creative options like onion, garlic, raisin or chocolate, there's a bagel for everyone. Additionally, whole grain, gluten-free, and vegan bagels can be found, making them accessible for different food preferences.",
+        author: 'Julieta',
+        imagen: '/src/img/baker7.png'
       }
   ];
 
@@ -67,7 +69,7 @@ for (let i = 0; i < database.length; i++) {
 
   const author = document.createElement('p');
   author.classList.add('card-text', 'text-muted');
-  author.textContent = `Autor: ${entrada.autor}`;
+  author.textContent = `Author: ${entrada.author}`;
   cardBody.appendChild(author);
 
   cardDeck.appendChild(card);
@@ -91,7 +93,7 @@ for (let i = 0; i < database.length; i++) {
   // Función para filtrar las entradas basado en el término de búsqueda
   function filterEntries(searchTerm) {
     const filteredEntries = database.filter(entry =>
-      entry.autor.toLowerCase() === searchTerm
+      entry.author.toLowerCase() === searchTerm
     );
   
     return filteredEntries;
@@ -123,7 +125,7 @@ for (let i = 0; i < database.length; i++) {
       entryHTML.appendChild(content);
 
       const author = document.createElement('p');
-      author.textContent = `Autor: ${entry.autor}`;
+      author.textContent = `Author: ${entry.author}`;
       entryHTML.appendChild(author);
 
       resultContainer.appendChild(entryHTML);

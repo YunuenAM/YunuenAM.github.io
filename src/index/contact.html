@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de Contacto</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/app.css">
+  <link rel="stylesheet" href="../css/carrito.css">
+  <link rel="stylesheet" href="../css/estructura.css">
+  <link rel="stylesheet" href="../css/esqueleto.css">
+  <link rel="stylesheet" href="../css/style.css">
+  
+  
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 m-5 ">
+        <div class="form-container p-3">
+          <h2 class="text-center bg-pink">Contact us</h2>
+          <img src="../img/logo.png" alt="logo" class="w-25 m-auto d-block">
+          <form action="procesar_formulario.php" method="POST">
+            <div class="form-group">
+              <label for="nombre" class="bg-pink">Your Name:</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="bg-pink">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="mensaje" class="bg-pink">Message:</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-aqua" disabled>Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
