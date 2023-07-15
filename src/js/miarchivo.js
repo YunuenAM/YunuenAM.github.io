@@ -6,19 +6,19 @@ function calcularCostoPedido(){
 
     switch(producto) {
         case 'baguette':
-            costoProducto = 35;
+            costoProducto = 2;
             break;
         case 'batard':
-            costoProducto = 100;
+            costoProducto = 5;
             break;
         case 'boule':
-            costoProducto = 120;
+            costoProducto = 7;
             break;
         case 'bagel':
-            costoProducto = 25;
+            costoProducto = 1.5;
             break;
         case 'pizza':
-            costoProducto = 250;
+            costoProducto = 15;
             break;
         default:
             return;
